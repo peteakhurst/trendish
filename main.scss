@@ -14,7 +14,7 @@ body {
         content: '';
         position: absolute;
         left: 12%;
-        border-left: 1px solid #EEA1BE;
+        border-left: 10px solid #EEA1BE;
         height: 100vh;
         top: 0;
     }
@@ -31,15 +31,17 @@ body {
     pointer-events: none;
     position: relative;
     color: #F3F2F4;
+    text-shadow: 5px 5px 0px #4210E7, 7px 7px 0px #4210E7;
 
     &:before {
         content: '';
         position: absolute;
-        width: 10%;
-        height: 3px;
+        width: 150px;
+        height: 150px;
         background: #EEA1BE;
-        left: -15%;
+        left: 50%;
         top: 15%;
+        transform: rotate(45deg);
     }
 
     .title-2, .title-3 {
@@ -53,6 +55,7 @@ p {
     font-size: 1.5rem;
     margin-top: 2em;
     color: #F3F2F4;
+    text-shadow: 5px 5px 0px #4210E7, 7px 7px 0px #4210E7;
     font-style: italic;
 }
 
@@ -99,4 +102,22 @@ p {
 
 .img:hover {
     opacity: .5;
+}
+
+
+@media(max-width: 968px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        z-index: 999;
+
+        .title {
+            font-size: 5rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .cursor {
+        display: none;
+    }
 }
