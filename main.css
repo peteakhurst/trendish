@@ -1,0 +1,108 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #4210E7;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  left: 12%;
+  border-left: 1px solid #EEA1BE;
+  height: 100vh;
+  top: 0;
+}
+
+.container {
+  margin-left: -50%;
+}
+
+.title {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  line-height: 10.5rem;
+  pointer-events: none;
+  position: relative;
+  color: #F3F2F4;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background: #EEA1BE;
+  left: -15%;
+  top: 15%;
+}
+
+.title .title-2, .title .title-3 {
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  color: #F3F2F4;
+  font-style: italic;
+}
+
+.waterbg {
+  position: absolute;
+  width: 30%;
+  height: 100vh;
+  z-index: -1;
+  background: url("./assets/bg.jpg");
+  background-color: #EEA1BE;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: luminosity;
+  opacity: 0.17;
+  right: 0;
+}
+
+.img {
+  position: absolute;
+  width: 16em;
+  height: 27em;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.cursor {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 1px solid #EEA1BE;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.img:hover {
+  opacity: .5;
+}
+/*# sourceMappingURL=main.css.map */
